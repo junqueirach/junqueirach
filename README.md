@@ -11,6 +11,8 @@ I have spent two decades developing, financing and delivering hydropower, solar 
 
 `recordings / PDFs / documents` → **clean Markdown corpus** → **RAG** (retrieval-augmented generation) → *later:* **fine-tuning** a model on the company's own material
 
+<p align="center"><img src="assets/pipeline.png" alt="From expert knowledge to private AI" width="900"></p>
+
 ## Projects
 
 All tools were built with Claude (Anthropic) as coding partner. I write the requirements, test on real data and iterate. Every earlier version is kept in each repo's `archive/` folder.
@@ -23,6 +25,8 @@ All tools were built with Claude (Anthropic) as coding partner. I write the requ
 | [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled radio recorder for unattended 24/7 machines | ~3.7k lines |
 | [**SRT Translator**](https://github.com/junqueirach/srt-translator) | Structure-preserving subtitle translation with Claude | GUI + CLI |
 | [**Kodi Files Generator**](https://github.com/junqueirach/kodi-files-generator) | CSV to Kodi NFO/XML generator with rename checker | |
+
+<p align="center"><img src="assets/iterations.png" alt="Iteration history" width="700"></p>
 
 ## How I work with AI
 

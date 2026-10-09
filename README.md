@@ -22,7 +22,7 @@ All tools were built with Claude (Anthropic) as coding partner. I write the requ
 | [**TranscriptLab**](https://github.com/junqueirach/transcriptlab) | Whisper transcription, YouTube/podcast capture and Markdown polishing into a RAG-ready corpus | ~27k lines, 70+ versions |
 | [**MD Converter**](https://github.com/junqueirach/md-converter) | PDF/Office/HTML/EPUB to Markdown with 6+ local engines, isolated environments and smoke tests. Windows .exe download in Releases | ~5.5k lines, 50 versions |
 | [**tcqa**](https://github.com/junqueirach/transcript-corpus-qa) | Offline fidelity checker: proves a corrected speech-to-text transcript changed only what its log says, before the text enters a RAG or fine-tuning corpus | 14 checks, 203 tests, CI on Ubuntu and Windows |
-| [**MediaClinic**](https://github.com/junqueirach/mediaclinic) | Kodi library health tool, built under a written AI-engineering contract (`CLAUDE_RULES.md`) | ~12k lines, 30 versions |
+| [**MediaClinic**](https://github.com/junqueirach/mediaclinic) | Kodi, Emby and Jellyfin library health tool, built under a written AI-engineering contract (`CLAUDE_RULES.md`). Windows .exe download in Releases | ~14.5k lines, 31 versions |
 | [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled radio recorder for unattended 24/7 machines | ~3.7k lines |
 | [**SRT Translator**](https://github.com/junqueirach/srt-translator) | Structure-preserving subtitle translation with Claude, with quality control, live pricing and cost estimates. Windows .exe download in Releases | ~2.5k lines, 8 versions |
 | [**Kodi Files Generator**](https://github.com/junqueirach/kodi-files-generator) | CSV to Kodi NFO/XML generator with rename checker | |

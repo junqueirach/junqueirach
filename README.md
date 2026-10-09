@@ -20,10 +20,10 @@ All tools were built with Claude (Anthropic) as coding partner. I write the requ
 | Project | What it does | Size |
 |---|---|---|
 | [**TranscriptLab**](https://github.com/junqueirach/transcriptlab) | Whisper transcription, YouTube/podcast capture and Markdown polishing into a RAG-ready corpus | ~27k lines, 70+ versions |
-| [**MD Converter**](https://github.com/junqueirach/md-converter) | PDF/Office/HTML/EPUB to Markdown with 6+ local engines, isolated environments and smoke tests. Windows .exe download in Releases | ~5.5k lines, 50 versions |
+| [**MD Converter**](https://github.com/junqueirach/md-converter) | PDF/Office/HTML/EPUB to Markdown with 6+ local engines, isolated environments and smoke tests. Windows .exe download in Releases | ~5.5k lines, 49 versions |
 | [**tcqa**](https://github.com/junqueirach/transcript-corpus-qa) | Offline fidelity checker: proves a corrected speech-to-text transcript changed only what its log says, before the text enters a RAG or fine-tuning corpus | 14 checks, 203 tests, CI on Ubuntu and Windows |
 | [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled recorder for online radio: captures interviews and author programs unattended, as raw material for the transcript pipeline | ~3.7k lines |
-| [**SRT Translator**](https://github.com/junqueirach/srt-translator) | Structure-preserving subtitle translation with Claude, with quality control, live pricing and cost estimates. Windows .exe download in Releases | ~2.5k lines, 8 versions |
+| [**SRT Translator**](https://github.com/junqueirach/srt-translator) | Structure-preserving subtitle translation with Claude, with quality control, live pricing and cost estimates. Windows .exe download in Releases | ~2.5k lines, 9 versions |
 
 <p align="center"><img src="assets/iterations.png" alt="Iteration history" width="700"></p>
 
@@ -62,7 +62,7 @@ Subtitles are part of the same job: I use [**SRT Translator**](https://github.co
 
 ## Tech
 
-Python · Tkinter · Whisper · MarkItDown · Docling · ffmpeg · yt-dlp · Claude API · Markdown pipelines · RAG concepts
+Python · Tkinter · Whisper · MarkItDown · Docling · ffmpeg · yt-dlp · Claude API · Markdown pipelines · RAG concepts · Kodi/Plex NFO and XML metadata
 
 ## Get in touch
 

@@ -3,7 +3,7 @@
 **Infrastructure & renewable energy investment professional (20+ years, PMP) who builds private, local-first AI tools.**
 Zürich, Switzerland · [junqueira.ch](https://www.junqueira.ch) · [LinkedIn](https://www.linkedin.com/in/luizjunqueira/)
 
-I have spent two decades developing, financing and delivering hydropower, solar and gas assets across Latin America, Africa and Europe. Today I combine that domain knowledge with hands-on AI engineering.
+I have spent nearly two decades developing, financing and delivering hydropower, solar and gas assets across Latin America, Africa and Europe. Today I combine that domain knowledge with hands-on AI engineering.
 
 ## What I'm working on
 

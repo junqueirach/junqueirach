@@ -23,7 +23,7 @@ All tools were built with Claude (Anthropic) as coding partner. I write the requ
 | [**MD Converter**](https://github.com/junqueirach/md-converter) | PDF/Office/HTML/EPUB to Markdown with 6+ local engines, isolated environments and smoke tests. Windows .exe download in Releases | ~5.5k lines, 49 versions |
 | [**tcqa**](https://github.com/junqueirach/transcript-corpus-qa) | Offline fidelity checker: proves a corrected speech-to-text transcript changed only what its log says, before the text enters a RAG or fine-tuning corpus | 14 checks, 203 tests, CI on Ubuntu and Windows |
 | [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled recorder for online radio: captures interviews and author programs unattended, as raw material for the transcript pipeline | ~3.7k lines |
-| [**SRT Studio**](https://github.com/junqueirach/srt-studio) | Structure-preserving subtitle translation with Claude, with quality control, live pricing, cost estimates and a one-screen desktop GUI. Windows .exe download in Releases | ~2.7k lines, 10 versions |
+| [**SRT Studio**](https://github.com/junqueirach/srt-studio) | Subtitle translation and repair with Claude (formerly SRT Translator): SRT, ASS/SSA, WebVTT and other text formats, timing and structure preserved, source check and repair, quality control, live pricing and cost estimates. Windows .exe download in Releases | ~4.7k lines, 12 versions |
 
 <p align="center"><img src="assets/iterations.png" alt="Iteration history" width="700"></p>
 

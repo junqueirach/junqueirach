@@ -23,7 +23,7 @@ All tools were built with Claude (Anthropic) as coding partner. I write the requ
 | [**MD Converter**](https://github.com/junqueirach/md-converter) | PDF/Office/HTML/EPUB to Markdown with 6+ local engines, isolated environments and smoke tests. Windows .exe download in Releases | ~5.5k lines, 49 versions |
 | [**tcqa**](https://github.com/junqueirach/transcript-corpus-qa) | Offline fidelity checker: proves a corrected speech-to-text transcript changed only what its log says, before the text enters a RAG or fine-tuning corpus | 14 checks, 203 tests, CI on Ubuntu and Windows |
 | [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled recorder for online radio: captures interviews and author programs unattended, as raw material for the transcript pipeline | ~3.7k lines |
-| [**SRT Translator**](https://github.com/junqueirach/srt-translator) | Structure-preserving subtitle translation with Claude, with quality control, live pricing, cost estimates and a one-screen desktop GUI. Windows .exe download in Releases | ~2.7k lines, 10 versions |
+| [**SRT Studio**](https://github.com/junqueirach/srt-studio) | Structure-preserving subtitle translation with Claude, with quality control, live pricing, cost estimates and a one-screen desktop GUI. Windows .exe download in Releases | ~2.7k lines, 10 versions |
 
 <p align="center"><img src="assets/iterations.png" alt="Iteration history" width="700"></p>
 
@@ -54,7 +54,7 @@ The catch is that a big library only works if it is tidy. Missing artwork, wrong
 | [**MediaClinic**](https://github.com/junqueirach/mediaclinic) | For **Plex, Kodi, Emby and Jellyfin users**: scans a movie library, shows every metadata, artwork and video problem in one colour-coded table and fixes the common ones safely. It checks Kodi `.nfo` and Emby/Jellyfin `movie.xml` files, so it also suits **Plex with an NFO add-on**. Windows .exe download in Releases |
 | [**Kodi Files Generator**](https://github.com/junqueirach/kodi-files-generator) | Builds Kodi NFO/XML files from a CSV and checks folder names |
 
-Subtitles are part of the same job: I use [**SRT Translator**](https://github.com/junqueirach/srt-translator) (listed under AI projects above) to translate the subtitles of the films I own, and the same tool turns the subtitles of videos into text for my transcript corpus.
+Subtitles are part of the same job: I use [**SRT Studio**](https://github.com/junqueirach/srt-studio) (formerly SRT Translator, listed under AI projects above) to translate the subtitles of the films I own, and the same tool turns the subtitles of videos into text for my transcript corpus.
 
 <p align="center"><img src="https://github.com/junqueirach/mediaclinic/raw/main/docs/screenshots/mediaclinic.png" alt="MediaClinic" width="800"></p>
 

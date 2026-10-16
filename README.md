@@ -21,7 +21,7 @@ All tools were built with Claude (Anthropic) as coding partner. I write the requ
 |---|---|---|
 | [**TranscriptLab**](https://github.com/junqueirach/transcriptlab) | Whisper transcription, YouTube/podcast capture and Markdown polishing into a RAG-ready corpus. Windows .exe download in Releases | ~27k lines, 74 versions |
 | [**MD Converter**](https://github.com/junqueirach/md-converter) | PDF/Office/HTML/EPUB and subtitles to Markdown with 6+ local engines, isolated environments and smoke tests. Windows .exe download in Releases | ~5.5k lines, 49 versions |
-| [**tcqa**](https://github.com/junqueirach/transcript-corpus-qa) | Offline fidelity checker: proves a corrected speech-to-text transcript changed only what its log says, before the text enters a RAG or fine-tuning corpus | 14 checks, 203 tests, CI on Ubuntu and Windows |
+| [**tcqa**](https://github.com/junqueirach/transcript-corpus-qa) | Offline fidelity checker: proves a corrected speech-to-text transcript changed only what its log says, before the text enters a RAG or fine-tuning corpus. Since v0.2.0 also a Claude Code agent that revises a corpus channel by channel, has every file re-judged by a separate verifier agent, builds one review queue and exports RAG-ready chunks | 14 checks, 238 tests, CI on Ubuntu and Windows |
 | [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled recorder for online radio: captures interviews and author programs unattended, as raw material for the transcript pipeline. Windows .exe download in Releases | ~3.7k lines, 5 versions |
 | [**SRT Studio**](https://github.com/junqueirach/srt-studio) | Subtitle translation and repair with Claude (formerly SRT Translator): SRT, ASS/SSA, WebVTT and other text formats, timing and structure preserved, source check and repair, quality control, live pricing and cost estimates. Windows .exe download in Releases | ~5.4k lines, 13 versions |
 
@@ -62,7 +62,7 @@ Subtitles are part of the same job: I use [**SRT Studio**](https://github.com/ju
 
 ## Tech
 
-Python · Tkinter · Whisper · MarkItDown · Docling · ffmpeg · yt-dlp · pysubs2 · Claude API · Markdown pipelines · RAG concepts · Kodi/Plex NFO and XML metadata · pytest · GitHub Actions CI · PyInstaller Windows builds
+Python · Tkinter · Whisper · MarkItDown · Docling · ffmpeg · yt-dlp · pysubs2 · Claude API · Claude Code agents · Markdown pipelines · RAG concepts · Kodi/Plex NFO and XML metadata · pytest · GitHub Actions CI · PyInstaller Windows builds
 
 ## Get in touch
 

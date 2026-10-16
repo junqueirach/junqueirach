@@ -52,7 +52,7 @@ The catch is that a big library only works if it is tidy. Missing artwork, wrong
 | Tool | What it does |
 |---|---|
 | [**MediaClinic**](https://github.com/junqueirach/mediaclinic) | For **Plex, Kodi, Emby and Jellyfin users**: scans a movie library, shows every metadata, artwork and video problem in one colour-coded table and fixes the common ones safely. It checks Kodi `.nfo` and Emby/Jellyfin `movie.xml` files, so it also suits **Plex with an NFO add-on**. Windows .exe download in Releases |
-| [**Kodi Files Generator**](https://github.com/junqueirach/kodi-files-generator) | Builds Kodi NFO/XML files from a CSV and checks folder names. Windows .exe download in Releases |
+| [**Kodi Files Generator**](https://github.com/junqueirach/kodi-files-generator) | For **Kodi, Jellyfin and Emby users**: opens a TV series folder, takes the episode data from your own CSV or Excel list or from free sources (TheTVDB pages, TVmaze), and writes every episode and series NFO, XML and image after a preview, with backup and undo. Windows .exe download in Releases |
 
 Subtitles are part of the same job: I use [**SRT Studio**](https://github.com/junqueirach/srt-studio) (formerly SRT Translator, listed under AI projects above) to translate and repair the subtitles of the films I own; [MD Converter](https://github.com/junqueirach/md-converter) turns subtitle files into Markdown for my transcript corpus.
 

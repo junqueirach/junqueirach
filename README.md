@@ -9,7 +9,7 @@ I have spent nearly two decades developing, financing and delivering hydropower,
 
 **Turning expert knowledge into private AI.** Energy and infrastructure companies hold know-how and trade secrets they cannot paste into a public chatbot. I am building the pipeline to make that knowledge usable by AI *on their own infrastructure*:
 
-`recordings / PDFs / documents` → **clean Markdown corpus** → **verified revision** ([tcqa](https://github.com/junqueirach/transcript-corpus-qa)) → **RAG** (retrieval-augmented generation) → *later:* **fine-tuning** a model on the company's own material
+`recordings / PDFs / documents / subtitles` → **clean Markdown corpus** → **verified revision** ([tcqa](https://github.com/junqueirach/transcript-corpus-qa)) → **RAG** (retrieval-augmented generation) → *later:* **fine-tuning** a model on the company's own material
 
 <p align="center"><img src="assets/pipeline.png" alt="From expert knowledge to private AI" width="900"></p>
 
@@ -19,10 +19,10 @@ All tools were built with Claude (Anthropic) as coding partner. I write the requ
 
 | Project | What it does | Size |
 |---|---|---|
-| [**TranscriptLab**](https://github.com/junqueirach/transcriptlab) | Whisper transcription, YouTube/podcast capture and Markdown polishing into a RAG-ready corpus | ~27k lines, 70+ versions |
-| [**MD Converter**](https://github.com/junqueirach/md-converter) | PDF/Office/HTML/EPUB to Markdown with 6+ local engines, isolated environments and smoke tests. Windows .exe download in Releases | ~5.5k lines, 49 versions |
+| [**TranscriptLab**](https://github.com/junqueirach/transcriptlab) | Whisper transcription, YouTube/podcast capture and Markdown polishing into a RAG-ready corpus. Windows .exe download in Releases | ~27k lines, 74 versions |
+| [**MD Converter**](https://github.com/junqueirach/md-converter) | PDF/Office/HTML/EPUB and subtitles to Markdown with 6+ local engines, isolated environments and smoke tests. Windows .exe download in Releases | ~5.5k lines, 49 versions |
 | [**tcqa**](https://github.com/junqueirach/transcript-corpus-qa) | Offline fidelity checker: proves a corrected speech-to-text transcript changed only what its log says, before the text enters a RAG or fine-tuning corpus | 14 checks, 203 tests, CI on Ubuntu and Windows |
-| [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled recorder for online radio: captures interviews and author programs unattended, as raw material for the transcript pipeline | ~3.7k lines |
+| [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled recorder for online radio: captures interviews and author programs unattended, as raw material for the transcript pipeline. Windows .exe download in Releases | ~3.7k lines, 5 versions |
 | [**SRT Studio**](https://github.com/junqueirach/srt-studio) | Subtitle translation and repair with Claude (formerly SRT Translator): SRT, ASS/SSA, WebVTT and other text formats, timing and structure preserved, source check and repair, quality control, live pricing and cost estimates. Windows .exe download in Releases | ~4.7k lines, 12 versions |
 
 <p align="center"><img src="assets/iterations.png" alt="Iteration history" width="700"></p>
@@ -52,9 +52,9 @@ The catch is that a big library only works if it is tidy. Missing artwork, wrong
 | Tool | What it does |
 |---|---|
 | [**MediaClinic**](https://github.com/junqueirach/mediaclinic) | For **Plex, Kodi, Emby and Jellyfin users**: scans a movie library, shows every metadata, artwork and video problem in one colour-coded table and fixes the common ones safely. It checks Kodi `.nfo` and Emby/Jellyfin `movie.xml` files, so it also suits **Plex with an NFO add-on**. Windows .exe download in Releases |
-| [**Kodi Files Generator**](https://github.com/junqueirach/kodi-files-generator) | Builds Kodi NFO/XML files from a CSV and checks folder names |
+| [**Kodi Files Generator**](https://github.com/junqueirach/kodi-files-generator) | Builds Kodi NFO/XML files from a CSV and checks folder names. Windows .exe download in Releases |
 
-Subtitles are part of the same job: I use [**SRT Studio**](https://github.com/junqueirach/srt-studio) (formerly SRT Translator, listed under AI projects above) to translate the subtitles of the films I own, and the same tool turns the subtitles of videos into text for my transcript corpus.
+Subtitles are part of the same job: I use [**SRT Studio**](https://github.com/junqueirach/srt-studio) (formerly SRT Translator, listed under AI projects above) to translate and repair the subtitles of the films I own; [MD Converter](https://github.com/junqueirach/md-converter) turns subtitle files into Markdown for my transcript corpus.
 
 <p align="center"><img src="https://github.com/junqueirach/mediaclinic/raw/main/docs/screenshots/mediaclinic.png" alt="MediaClinic" width="800"></p>
 
@@ -62,7 +62,7 @@ Subtitles are part of the same job: I use [**SRT Studio**](https://github.com/ju
 
 ## Tech
 
-Python · Tkinter · Whisper · MarkItDown · Docling · ffmpeg · yt-dlp · Claude API · Markdown pipelines · RAG concepts · Kodi/Plex NFO and XML metadata
+Python · Tkinter · Whisper · MarkItDown · Docling · ffmpeg · yt-dlp · pysubs2 · Claude API · Markdown pipelines · RAG concepts · Kodi/Plex NFO and XML metadata · pytest · GitHub Actions CI · PyInstaller Windows builds
 
 ## Get in touch
 

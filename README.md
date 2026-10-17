@@ -9,7 +9,7 @@ I have spent nearly two decades developing, financing and delivering hydropower,
 
 **Turning expert knowledge into private AI.** Energy and infrastructure companies hold know-how and trade secrets they cannot paste into a public chatbot. I am building the pipeline to make that knowledge usable by AI *on their own infrastructure*:
 
-`recordings / PDFs / documents / subtitles` → **clean Markdown corpus** → **verified revision** ([tcqa](https://github.com/junqueirach/transcript-corpus-qa)) → **RAG** (retrieval-augmented generation) → *later:* **fine-tuning** a model on the company's own material
+`recordings / PDFs / documents / subtitles` → **clean Markdown corpus** → **AI revision, checked** ([tcqa](https://github.com/junqueirach/transcript-corpus-qa)) → **RAG** (retrieval-augmented generation) → *later:* **fine-tuning** a model on the company's own material
 
 <p align="center"><img src="assets/pipeline.png" alt="From expert knowledge to private AI" width="900"></p>
 
@@ -21,7 +21,7 @@ All tools were built with Claude (Anthropic) as coding partner. I write the requ
 |---|---|---|
 | [**TranscriptLab**](https://github.com/junqueirach/transcriptlab) | Whisper transcription with checked model downloads, YouTube/podcast capture and Markdown polishing into a RAG-ready corpus. Windows .exe download in Releases, update check built in | ~30k lines, 76 versions |
 | [**MD Converter**](https://github.com/junqueirach/md-converter) | PDF/Office/HTML/EPUB and subtitles to Markdown with 6+ local engines, isolated environments and smoke tests. Windows .exe download in Releases | ~5.5k lines, 49 versions |
-| [**tcqa**](https://github.com/junqueirach/transcript-corpus-qa) | Offline fidelity checker: proves a corrected speech-to-text transcript changed only what its log says, before the text enters a RAG or fine-tuning corpus. Since v0.2.0 also a Claude Code agent that revises a corpus channel by channel, has every file re-judged by a separate verifier agent, builds one review queue and exports RAG-ready chunks | 14 checks, 238 tests, CI on Ubuntu and Windows |
+| [**tcqa**](https://github.com/junqueirach/transcript-corpus-qa) | AI revision of speech-to-text transcripts that can be checked: a Claude Code agent corrects a whole corpus and a second agent re-checks every correction; then an offline checker (no AI) proves each transcript changed only what its log says, before the text enters a RAG or fine-tuning corpus | Agent + checker, 14 checks, 238 tests, CI on Ubuntu and Windows |
 | [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled recorder for online radio: captures interviews and author programs unattended, as raw material for the transcript pipeline. Windows .exe download in Releases | ~3.7k lines, 5 versions |
 | [**SRT Studio**](https://github.com/junqueirach/srt-studio) | Subtitle translation and repair with Claude (formerly SRT Translator): SRT, ASS/SSA, WebVTT and other text formats, timing and structure preserved, source check and repair, quality control, live pricing and cost estimates. Windows .exe download in Releases | ~5.4k lines, 13 versions |
 

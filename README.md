@@ -23,7 +23,7 @@ All tools were built with Claude (Anthropic) as coding partner. I write the requ
 | [**MD Converter**](https://github.com/junqueirach/md-converter) | PDF/Office/HTML/EPUB and subtitles to Markdown with 6+ local engines, isolated environments and smoke tests. Windows .exe download in Releases | ~5.5k lines, 49 versions |
 | [**tcqa**](https://github.com/junqueirach/transcript-corpus-qa) | AI revision of speech-to-text transcripts that can be checked: a Claude Code agent corrects a whole corpus and a second agent re-checks every correction; then an offline checker (no AI) proves each transcript changed only what its log says, before the text enters a RAG or fine-tuning corpus | Agent + checker, 14 checks, 238 tests, CI on Ubuntu and Windows |
 | [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled recorder for online radio: captures interviews and author programs unattended, as raw material for the transcript pipeline. Windows .exe download in Releases | ~3.7k lines, 5 versions |
-| [**SRT Studio**](https://github.com/junqueirach/srt-studio) | Subtitle translation and repair with Claude (formerly SRT Translator): SRT, ASS/SSA, WebVTT and other text formats, timing and structure preserved, source check and repair, quality control, live pricing and cost estimates. Windows .exe download in Releases | ~5.4k lines, 13 versions |
+| [**SRT Studio**](https://github.com/junqueirach/srt-studio) | Subtitle translation, repair and sync with Claude (formerly SRT Translator): SRT, ASS/SSA, WebVTT and other text formats, sync to another subtitle or to the video's audio, subtitles taken from MKV/MP4, source check and repair, quality control, live pricing and cost estimates. Windows .exe download in Releases | ~9.3k lines, 14 versions |
 
 <p align="center"><img src="assets/iterations.png" alt="Iteration history" width="700"></p>
 
@@ -54,7 +54,7 @@ The catch is that a big library only works if it is tidy. Missing artwork, wrong
 | [**MediaClinic**](https://github.com/junqueirach/mediaclinic) | For **Plex, Kodi, Emby and Jellyfin users**: scans a movie library, shows every metadata, artwork and video problem in one colour-coded table and fixes the common ones safely. It checks Kodi `.nfo` and Emby/Jellyfin `movie.xml` files, so it also suits **Plex with an NFO add-on**. Windows .exe download in Releases |
 | [**Kodi Files Generator**](https://github.com/junqueirach/kodi-files-generator) | For **Kodi, Jellyfin and Emby users**: opens a TV series folder, takes the episode data from your own CSV or Excel list or from free sources (TheTVDB pages, TVmaze), and writes every episode and series NFO, XML and image after a preview, with backup and undo. Windows .exe download in Releases |
 
-Subtitles are part of the same job: I use [**SRT Studio**](https://github.com/junqueirach/srt-studio) (formerly SRT Translator, listed under AI projects above) to translate and repair the subtitles of the films I own; [MD Converter](https://github.com/junqueirach/md-converter) turns subtitle files into Markdown for my transcript corpus.
+Subtitles are part of the same job: I use [**SRT Studio**](https://github.com/junqueirach/srt-studio) (formerly SRT Translator, listed under AI projects above) to translate, repair and sync the subtitles of the films I own; [MD Converter](https://github.com/junqueirach/md-converter) turns subtitle files into Markdown for my transcript corpus.
 
 <p align="center"><img src="https://github.com/junqueirach/mediaclinic/raw/main/docs/screenshots/mediaclinic.png" alt="MediaClinic" width="800"></p>
 

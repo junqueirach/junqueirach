@@ -23,6 +23,7 @@ All tools were built with Claude (Anthropic) as coding partner. I write the requ
 | [**MD Converter**](https://github.com/junqueirach/md-converter) | PDF/Office/HTML/EPUB, subtitles and more to Markdown with local engines: light ones run in parallel workers, heavy ones (Docling, marker, MinerU, Surya…) in isolated environments with checked installs. Batch queue that survives a restart, quality badges, corpus export. Windows .exe download in Releases, update check built in | ~11.4k lines, 50 versions |
 | [**tcqa**](https://github.com/junqueirach/transcript-corpus-qa) | AI revision of speech-to-text transcripts that can be checked: a Claude Code agent corrects a whole corpus and a second agent re-checks every correction; then an offline checker (no AI) proves each transcript changed only what its log says, before the text enters a RAG or fine-tuning corpus | Agent + checker, 14 checks, 238 tests, CI on Ubuntu and Windows |
 | [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled recorder for online radio: captures interviews and author programs unattended, as raw material for the transcript pipeline. Records every station in its own time zone, resumes dropped streams. Windows .exe download in Releases, update check built in | ~8.9k lines, 6 versions |
+| [**Tiny Recorder**](https://github.com/junqueirach/tiny-recorder) | Very light meeting recorder: everything the computer plays and everything you say in one tagged MP3, with no AI and no cloud. Captures meetings and calls as raw material for the transcript pipeline. Windows .exe download in Releases | ~2.6k lines, 4 versions |
 | [**SRT Studio**](https://github.com/junqueirach/srt-studio) | Subtitle translation, repair and sync with Claude (formerly SRT Translator): SRT, ASS/SSA, WebVTT and other text formats, sync to another subtitle or to the video's audio, subtitles taken from MKV/MP4, source check and repair, quality control, live pricing and cost estimates. Windows .exe download in Releases | ~9.3k lines, 14 versions |
 
 <p align="center"><img src="assets/iterations.png" alt="Iteration history" width="700"></p>
@@ -62,7 +63,7 @@ Subtitles are part of the same job: I use [**SRT Studio**](https://github.com/ju
 
 ## Tech
 
-Python · Tkinter · Whisper · MarkItDown · Docling · ffmpeg · yt-dlp · pysubs2 · Claude API · Claude Code agents · Markdown pipelines · RAG concepts · Kodi/Plex NFO and XML metadata · pytest · GitHub Actions CI · PyInstaller Windows builds
+Python · Tkinter · WASAPI audio capture · Whisper · MarkItDown · Docling · ffmpeg · yt-dlp · pysubs2 · Claude API · Claude Code agents · Markdown pipelines · RAG concepts · Kodi/Plex NFO and XML metadata · pytest · GitHub Actions CI · PyInstaller Windows builds
 
 ## Get in touch
 

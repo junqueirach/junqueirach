@@ -25,7 +25,6 @@ All tools were built with Claude (Anthropic) as coding partner. I write the requ
 | [**RadioSave**](https://github.com/junqueirach/radiosave) | Scheduled recorder for online radio: captures interviews and author programs unattended, as raw material for the transcript pipeline. Records every station in its own time zone, resumes dropped streams. Windows .exe download in Releases, update check built in | ~11.4k lines, 7 versions |
 | [**Tiny Recorder**](https://github.com/junqueirach/tiny-recorder) | Very light meeting recorder: everything the computer plays and everything you say in one tagged MP3, with no AI and no cloud. Captures meetings and calls as raw material for the transcript pipeline. Windows .exe download in Releases | ~2.6k lines, 4 versions |
 | [**SRT Studio**](https://github.com/junqueirach/srt-studio) | Subtitle translation, repair and sync with Claude (formerly SRT Translator): SRT, ASS/SSA, WebVTT and other text formats, sync to another subtitle or to the video's audio, subtitles taken from MKV/MP4, source check and repair, quality control, live pricing and cost estimates. Windows .exe download in Releases | ~9.3k lines, 14 versions |
-| **PES Viewer and PES Generator** | Two Windows tools for machine embroidery, not tied to the transcript pipeline: a viewer that shows how a PES file is stitched (every stitch, colour, trim and the measured density), and a generator that turns an image into embroidery files in several sizes, with a check of each file. Private for now, no public download | in testing |
 
 <p align="center"><img src="assets/iterations.png" alt="Iteration history" width="700"></p>
 
@@ -43,7 +42,11 @@ Not everything here is AI. I am a civil engineer by training, and one older proj
 
 **[dlearn-ppd](https://github.com/junqueirach/dlearn-ppd)** is my 2001 civil-engineering graduation project at UNESP Bauru, rebuilt for current machines. It comes from research on dynamic structural analysis: DLEARN, the finite-element program published with T.J.R. Hughes' textbook, extended with Prof. Heitor M. Bottura's Hermitian time-integration algorithms. The pre-processor I wrote in Turbo Pascal generates DLEARN's input files from a question-and-answer dialogue. In 2026 I rebuilt DLEARN with gfortran and, with Claude, added a tested Python rewrite of the pre-processor. Checking my 2001 program against the Fortran exposed three bugs in it, documented in the repo.
 
-## 🎬 Off the clock: my own media library
+## Off the clock
+
+Two hobbies where I build for people I know: my own film library, and my mother-in-law's embroidery. They sit apart from the professional pipeline above.
+
+### 🎬 My own media library
 
 One of my hobbies is keeping my films and series in my own offline library: rips of the DVDs and Blu-rays I have bought, served from a home media server or NAS to **Plex, Kodi, Emby or Jellyfin**. I use the tools below every day, and they are built for people who run the same kind of library.
 
@@ -61,6 +64,15 @@ Subtitles are part of the same job: I use [**SRT Studio**](https://github.com/ju
 <p align="center"><img src="https://github.com/junqueirach/mediaclinic/raw/main/docs/screenshots/mediaclinic.png" alt="MediaClinic" width="800"></p>
 
 *This is about keeping what I have bought, not about piracy. Rules on copying discs differ by country, so check yours.*
+
+### 🧵 Embroidery: tools for my mother-in-law
+
+My mother-in-law embroiders a lot, and I watch the same difficulties come back: it is hard to see how a design will actually be stitched before the machine runs, and turning a picture into a file the machine can read takes many manual steps. I build these two tools from those difficulties, with her as the first tester. Both are **private for now**: there is no public download, and they are still in testing.
+
+| Tool | What it does |
+|---|---|
+| **PES Viewer** | A light Windows viewer that opens PES and about 40 other embroidery formats and shows how the design is stitched: every stitch, colour, trim and jump, the stitching order and the measured density. It only views; it never changes a file. |
+| **PES Generator** | Turns an image into embroidery files in several sizes, as PES or other machine formats, with a check of each file and a sheet per size. The automatic stitching works best for flat-colour drawings and logos and is weaker for photos, so a test stitch on scrap fabric is always advised. |
 
 ## Tech
 

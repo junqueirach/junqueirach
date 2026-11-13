@@ -56,7 +56,7 @@ The catch is that a big library only works if it is tidy. Missing artwork, wrong
 
 | Tool | What it does |
 |---|---|
-| [**MediaClinic**](https://github.com/junqueirach/mediaclinic) | For **Plex, Kodi, Emby and Jellyfin users**: scans a movie library, shows every metadata, artwork and video problem in one colour-coded table and fixes the common ones safely. It checks Kodi `.nfo` and Emby/Jellyfin `movie.xml` files, so it also suits **Plex with an NFO add-on**. Latest release: **v0.19.5**, a fix release after a review of every feature. [Windows .exe download](https://github.com/junqueirach/mediaclinic/releases/latest) |
+| [**MediaClinic**](https://github.com/junqueirach/mediaclinic) | For **Plex, Kodi, Emby and Jellyfin users**: scans a movie library, shows every metadata, artwork and video problem in one colour-coded table and fixes the common ones safely. It checks the `.nfo` files that Kodi, Jellyfin, Emby, Infuse and **Plex with its NFO agent** read, and, if you choose, the `movie.xml` of old Windows media centers. Latest release: **v0.19.6**: a first-start question picks which files are checked, Sync Ratings by IMDb ID, and runs on Linux from source. [Windows .exe download](https://github.com/junqueirach/mediaclinic/releases/latest) |
 | [**Kodi Files Generator**](https://github.com/junqueirach/kodi-files-generator) | For **Kodi, Jellyfin and Emby users**: opens a TV series folder, takes the episode data from your own CSV or Excel list or from free sources (TheTVDB pages, TVmaze), and writes every episode and series NFO, XML and image after a preview, with backup and undo. Windows .exe download in Releases |
 
 Subtitles are part of the same job: I use [**SRT Studio**](https://github.com/junqueirach/srt-studio) (formerly SRT Translator, listed under AI projects above) to translate, repair and sync the subtitles of the films I own; [MD Converter](https://github.com/junqueirach/md-converter) turns subtitle files into Markdown for my transcript corpus.
@@ -76,7 +76,7 @@ My mother-in-law embroiders a lot, and I watch the same difficulties come back: 
 
 ## Tech
 
-Python · Tkinter · WASAPI audio capture · Whisper · MarkItDown · Docling · ffmpeg · yt-dlp · pysubs2 · Claude API · Claude Code agents · Markdown pipelines · RAG concepts · Kodi/Plex NFO and XML metadata · pytest · GitHub Actions CI · PyInstaller Windows builds
+Python · Tkinter · WASAPI audio capture · Whisper · MarkItDown · Docling · ffmpeg · yt-dlp · pysubs2 · Claude API · Claude Code agents · Markdown pipelines · RAG concepts · Kodi/Plex NFO and XML metadata · pytest · GitHub Actions CI · PyInstaller and Nuitka Windows builds
 
 ## Get in touch
 
